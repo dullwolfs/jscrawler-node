@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "start": "node ./bin/jscrawler-node"
+    "start": "node ./bin/loader"
   },
   "dependencies": {
     "async": "^2.6.0",
@@ -13,8 +13,17 @@
     "queue-fun": "^0.3.2",
     "selenium-webdriver": "^4.0.0-alpha.1"
   },
-  "description": "jscrawler is a spider framework, jscrawler-node is a component for node.There is another component named jscrawler-web.",
+  "description": "jscrawler-node is a spider framework based on selenium-webdriver.It is very easy to make a spider with this tools",
   "devDependencies": {},
   "author": "flyingf0x",
-  "license": "GPL-3.0"
+  "license": "GPL-3.0",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/flyingf0x/jscrawler-node.git"
+  },
+  "bugs": {
+    "url": "https://github.com/flyingf0x/jscrawler-node/issues"
+  },
+  "homepage": "https://github.com/flyingf0x/jscrawler-node#readme"
 }
