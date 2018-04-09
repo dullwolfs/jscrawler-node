@@ -22,8 +22,6 @@ eval((function (){
     const By=webDriver.By;
     const until=webDriver.until;
     const Options=require('selenium-webdriver/'+browser).Options;
-    const Queue=require('promise-queue-plus');
-    const q=Queue.Promise;
 
     let driver;
 
