@@ -44,7 +44,7 @@ open prop/main.json
 - **main**
 >Which js do you want execute which is in jscrawler-node/js folder.
 >
-.你需要执行的js文件，它需要被放置在jscrawler-node/js目录。
+>你需要执行的js文件，它需要被放置在jscrawler-node/js目录。
 
 #### Coding
 Write your code into the file what you configure.
@@ -61,6 +61,7 @@ npm run start
 
 ### Explian
 Startup process like this:
+启动流程如下：
 - **bin/loader.js**
 >Read prop/main.js. Call child_process.spwan() to set PATH and run libs/executor.js.
 >
@@ -76,7 +77,7 @@ Startup process like this:
 
 You can write your js just like wrting a node program with some APIs from executor.js
 
-你可以像写node应用一样编写你的代码，并且得到executor.js提供的一些API
+你可以像写node应用一样编写你的代码，并且使用executor.js提供的一些API
 
 ### APIs
 libs/executor.js provide a object **crawler**, and it contains some functions.
@@ -131,7 +132,7 @@ await crawler.openSomeContent(
 - **arguments[1]**
 >Same as the **arguments[1]** in function **openContent** except the return data.
 >
->除了返回数据，其他与**openContent**的中的**arguments[1]**相同。
+>除了返回数据，其他与 **openContent** 的中的 **arguments[1]** 相同。
 - **arguments[2]**
 >max concurrency
 >
