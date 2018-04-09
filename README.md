@@ -21,9 +21,9 @@ const support={
 ### Get Started
 
 #### Installation
-You should install nodejs first.
+You should install nodejs before installation.
 
-你应该先安装nodejs。
+你应该在安装前安装nodejs。
 ```bash
 git clone https://github.com/flyingf0x/jscrawler-node.git
 cd jscrawler-node/
@@ -100,8 +100,8 @@ let result=await crawler.openContent(
 >
 >你想要打开的url
 - **arguments[1]** (end)=>{}
->This function will send to the remove web content and execute it,you can use window/document directly.
->You shoud call end at the end of function, or with a param if necessary, param will be return from openContent.
+>This function will be send to the remote web content and execute it,you can use window/document directly.
+>You shoud call end() at the end of function, or with a param if necessary, param will be return from openContent.
 >You also can catch result in then() if whithout await.
 >
 >该方法将会被发送到浏览器端进行执行，你可以直接使用window/document。
