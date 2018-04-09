@@ -1,8 +1,10 @@
 ## jscrawler-node
 A easy-to-use crawler frame for node, based on [**selenium-webdriver**](https://seleniumhq.github.io/selenium/docs/api/javascript/module/selenium-webdriver). It is still in development. You don't need to deploy the browser driver of selenium-webdriver.
+
 一个为node提供的非常容易使用的爬虫框架，基于[**selenium-webdriver**](https://seleniumhq.github.io/selenium/docs/api/javascript/module/selenium-webdriver)。目前还正在开发。你不需要为selenium-webdriver去部署浏览器驱动。
 
 jsrawler-node contain some of them:
+
 jscawler-node 包含了一部分驱动：
 ```js
 const support={
@@ -20,6 +22,7 @@ const support={
 
 #### Installation
 You should install nodejs first.
+
 你应该先安装nodejs。
 ```bash
 git clone https://github.com/flyingf0x/jscrawler-node.git
