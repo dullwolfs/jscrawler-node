@@ -1,7 +1,11 @@
 (async function(){
+
     const fs=require('fs');
     const path=require('path');
-    crawler.init(true);
+    crawler.init({
+        headless:true,
+        tryTimes:3
+    });
     const pageUrl='http://www.qingyy.net/App/index/p/';
     //获取最大页数
     let max=await crawler.openContent(pageUrl+1,(callback)=>{
@@ -17,7 +21,7 @@
         get: (index) => {
             return pageUrl + index;
         },
-        length: 10
+        length: 1
     }, (callback) => {
         let parent = document.getElementById('thelist').children;
         let appList = []
@@ -25,7 +29,7 @@
             appList.push(item.href);
         }
         callback(appList)
-    }, 5, (list) => {
+    }, 15, (list) => {
         console.log('list '+(list.index+1)+'/'+max);
         appList = appList.concat(list.data);
     })
@@ -68,7 +72,7 @@
         let desc = document.getElementsByClassName('detaltext')[0].children[2].innerText;
         inner.desc = desc;
         callback(inner);
-    },30,(inner)=>{
+    },15,(inner)=>{
         console.log('app '+(inner.index+1)+'/'+appList.length)
         data.push(inner);
     })
